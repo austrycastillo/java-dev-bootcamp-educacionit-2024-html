@@ -1,0 +1,120 @@
+/********PRACTICA 1*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* div{
+    border: 1px solid gray;
+} */
+.padre{
+    max-width: 450px;
+    /* background-color: aqua; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*tamaño individual a ciertos box*/
+
+.img-2{
+    grid-row: 1/3;
+}
+.img-6{
+    grid-column: 3/5;
+}
+.img-7{
+    grid-column: 1/4;
+}
+
+
+
+
+/******PRACTICA 2*********/
+
+.ppal{
+    max-width: 600px;
+    /* background-color: lightcoral; */
+    display: grid;
+    grid-template-columns: 100px 350px 150px;
+    grid-template-rows: 100px 300px 50px;
+    grid-template-areas: 
+    "header header header"
+    "section main aside"
+    "footer footer footer"
+    ;
+}
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+section{
+    background-color: lightgreen;
+    grid-area: section;
+}
+main{
+    background-color: lightsalmon;
+    grid-area: main;
+}
+aside{
+    background-color: lightslategray;
+    grid-area: aside;
+}
+footer{
+    background-color: rgb(107, 107, 51);
+    grid-area: footer;
+}
+
+input{
+    display: block;
+    margin-top: 10px;
+    width: 80%;
+    height: 30px;
+}
+
+
+/*media queries para ambas practicas*/
+@media(max-width:320px){
+    .padre{
+        grid-template-columns: 320px;
+        grid-template-rows: 320px 320px;
+    }
+    .ppal{
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 300px 150px 100px;
+        grid-template-areas: 
+        "header header header"
+        "section section section"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer"
+        ;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
