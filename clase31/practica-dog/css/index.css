@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+.title-dog{
+    font-family: "Playwrite PE", cursive;
+    color:#3295DA;
+}
+.menu>a{
+    color: white;
+    text-decoration: none;
+}
